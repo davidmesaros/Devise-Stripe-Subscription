@@ -13,7 +13,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { :host => 'https://devise-stripe-sub.herokuapp.com', :protocol => 'https'}
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
