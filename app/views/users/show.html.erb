@@ -34,6 +34,10 @@
   <dd><%= @user.subscribed %></dd>
   <dt><strong><%= model_class.human_attribute_name(:stripeid) %>:</strong></dt>
   <dd><%= @user.stripeid %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:end_date) %>:</strong></dt>
+  <dd><%= @user.end_date %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:customer_id) %>:</strong></dt>
+  <dd><%= @user.customer_id %></dd>
 </dl>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),

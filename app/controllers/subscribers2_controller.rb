@@ -1,4 +1,4 @@
-class SubscribersController < ApplicationController
+class Subscribers2Controller < ApplicationController
   before_filter :authenticate_user!
   def new
     
@@ -16,9 +16,8 @@ class SubscribersController < ApplicationController
    
     current_user.stripeid = customer.id
     current_user.save
-    cusotmer_id = customer.id
-    
-    redirect_to user_path(current_user)
+
+    redirect_to users_path
 
   end
 end

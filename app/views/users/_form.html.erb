@@ -29,6 +29,34 @@
     </div>
     <%=f.error_span(:encrypted_password) %>
   </div>
+  <div class="form-group">
+   <%= f.label :subscribed, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :subscribed, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:subscribed) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :stripeid, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :stripeid, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:stripeid) %>
+  </div>
+   <div class="form-group">
+   <%= f.label :end_date,, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :end_date,, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:end_date) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :customer_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :customer_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:customer_id) %>
+  </div>
   <!-- <div class="form-group">
     <%= f.label :reset_password_token, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
@@ -126,6 +154,8 @@
       <%= f.submit nil, :class => 'btn btn-primary' %>
       <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 users_path, :class => 'btn btn-default' %>
+
+      <%= link_to "Cancel Subscription", root_path, :class => 'btn btn-primary' %>
     </div>
   </div>
 

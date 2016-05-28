@@ -1,6 +1,7 @@
 <% if current_user %>
   <h3>Welcome: <%= current_user.email %></h3>
-  <%= link_to "300 montly plan", new_subscriber_path %>
+  <%= link_to "$500 Daily plan", new_subscriber_path %> ||
+  <%= link_to "$500 Monthly plan", new_subscribers2_path %>
 <% else %>
 <div class="jumbotron">
   <h2>Welcome to Swiftads!</h2>
@@ -12,29 +13,21 @@
   <div class="plans clearfix">
     <div class="col-lg-6 col-lg-offset-1 plan">
       <h2>Starting Package</h2>
-      <!-- div class="price pull-right">
-      Price: $300 of Google Advertsing on First Page</br>
-      fee: 0.25%(exculded)
-    </div> -->
-    <div class="features">
-      <ul>
-        <li>Top Position of Google Search</li>
-        <li>Only Get Charge when someone clicks on your Ad(average cost per click is $5.00)</li>
-        <li>Swiftads works smartly to optimise your ad and get results with miniumal spending</li>
-        <li>Price: $300/month to Google Advertsing being on the First Page</br>
-        fee: 25%(excl)</li>
-      </ul>
-    </div>
+      <div class="features">
+        <ul>
+          <li>Top Position of Google Search</li>
+          <li>Only Get Charge when someone clicks on your Ad</li>
+          <li>Swiftads works smartly to optimise your ad and get results with miniumal spending</li>
+          <li>Price: $300/month to Google Advertsing being on the First Page</br>
+          fee: 25%(excl)</li>
+        </ul>
+      </div>
       <p>
         <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
       </p>
     </div>
-    <div class="col-lg-3 plan">
       <h2>Recommended Plan</h2>
-        <!-- <div class="price pull-right">
-          Price: $500<br>
-          fee: 0.25% (excluded)
-        </div> -->
+        
       <div class="features">
         <ul>
           <li> Sarting Package + </li>
@@ -48,7 +41,8 @@
         <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-primary sign-up' %>
       </p>
     </div>
-  </div>
+    <!--  -->
+  
 </div>
 
 

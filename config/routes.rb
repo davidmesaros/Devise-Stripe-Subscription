@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   resources :users
   resources :subscribers
-  
+  resources :subscribers2
+  post "users/hook"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
