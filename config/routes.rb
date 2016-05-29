@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :users
   resources :subscribers
   resources :subscribers2
-  post "users/hook"
+  post  "registrations/webhook"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

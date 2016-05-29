@@ -2,9 +2,6 @@ class RegistrationsController < Devise::RegistrationsController
   protect_from_forgery except: :webhook
   # protected
 
-  def renew
-   update_attibute :end_date, Date.today + 1.day
-  end
   def webhook
     event = Stripe::Event.retrieve(params["id"])
 

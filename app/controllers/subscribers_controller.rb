@@ -1,7 +1,12 @@
 class SubscribersController < ApplicationController
   before_filter :authenticate_user!
+  
   def new
     
+  end
+
+  def renew
+   update_attibute :end_date, Date.today + 1.day
   end
 
   def update
